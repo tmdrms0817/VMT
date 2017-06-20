@@ -1,0 +1,352 @@
+/*
+	//###############################################
+	// 경  로  명    : assets/css
+	// 파  일  명    : user.css
+	// 파 일 설 명   : User page-only style sheet 
+	//###############################################
+*/
+#wrap {
+	position: relative;
+	overflow: hidden;
+	min-width: 1200px;
+}
+
+/* Management Bar (LOGIN , JOIN, CART, ORDER, MY PAGE) */
+header #top {
+	height: 45px;
+	line-height: 45px;
+	background: #fff;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	z-index: 91 !important;
+}
+
+/* LOGO */
+header #loge {
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+}
+
+#logo a {
+	outline: none;
+	text-decoration: none;
+	cursor: auto;
+}
+
+#loge #main_logo {
+	padding: 50px 0;
+	text-align: center;
+}
+
+#loge #sub_logo {
+	position: fixed;
+	display: block;
+	top: -30px;
+	text-align: center;
+	width: 600px;
+	margin: 0 0 0 300px;
+	z-index: 92;
+}
+
+/* Site Navigation Bar */
+header nav {
+	height: 55px;
+}
+
+/* Slide Banner */
+section #slide {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#slide>div {
+	float: left;
+}
+
+.slide_main {
+	position: relative;
+	overflow: hidden;
+	width: 876px;
+	height: 506px;
+}
+
+#slide .cloth_list_data {
+	margin: 0px 0 10px 10px;
+}
+
+#slide:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#slide .slide_nav {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	z-index: 11;
+	margin: 0 auto;
+}
+
+#slide .slide_rect {
+	overflow: hidden;
+	position: relative;
+	z-index: 9;
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin: 0 7px 0 0;
+	background: url(/VMT/assets/images/slide_nav_n.png) 0 0 no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+#slide .slide_active {
+	background: url(/VMT/assets/images/slide_nav_a.png) 0 0 no-repeat;
+}
+
+/* Automatic Rolling Banner */
+section #rolling {
+	width: 1200px;
+	margin: 20px auto;
+}
+
+#rolling:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#rolling .rolling_main {
+	float: left;
+	width: 870px;
+	margin: 20px 0 0 0;
+	position: relative;
+}
+
+.rolling_loding {
+	position: absolute;
+	height: 196px;
+	width: 870px;
+	z-index: 90;
+	left: 0;
+	top: 23px;
+	margin: 0;
+	background: #fff url(/VMT/assets/images/loading.gif) 50% 50% no-repeat;
+}
+
+.rolling_title {
+	font-size: 11px;
+	line-height: 13px;
+	height: 13px;
+	color: #222;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	margin: 0 0 10px 0;
+}
+
+.rolling_banner {
+	overflow: hidden;
+	width: 870px;
+	height: 196px;
+	position: relative;
+}
+
+.rolling_banner ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.rolling_banner ul li {
+	float: left;
+	height: auto;
+	width: auto;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.rolling_banner ul li img {
+	max-height: 196px;
+	vertical-align: middle;
+}
+
+#rolling .rolling_button {
+	position: absolute;
+	top: -7px;
+	right: -7px;
+}
+
+.rolling_button li {
+	display: inline-block;
+}
+
+.rolling_button li img {
+	max-height: 28px;
+	vertical-align: middle;
+}
+
+#rolling .notice_banner {
+	float: right;
+	width: 313px;
+	margin: 20px 0 0 17px;
+}
+
+.notice_banner_title {
+	height: 13px;
+	line-height: 13px;
+	display: block;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	font-size: 11px;
+	margin: 0 0 10px 0;
+}
+
+.notice_banner a {
+	text-decoration: none;
+	color: #222;
+}
+
+.notice_banner ul li {
+	width: auto;
+	text-align: left;
+	height: 21px;
+	line-height: 21px;
+	font-size: 11px;
+	font-family: dotum;
+}
+
+#rolling .instagram_banner {
+	float: right;
+	width: 314px;
+	margin: 21px 0 0 16px;
+}
+
+/*	Main Contents */
+section #main {
+	position: relative;
+}
+
+#main #contents {
+	width: 1200px;
+	margin: 50px auto 0;
+}
+
+#main:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.product_list h2 {
+	padding: 40px 0 30px;
+	text-align: center;
+	color: #222;
+}
+
+.product_list h2 .title {
+	display: block;
+	height: 17px;
+	line-height: 17px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	letter-spacing: 3px;
+	font-size: 15px;
+}
+
+.product_list ul {
+	width: 1228px;
+	margin: 0 -14px;
+	display: table;
+	font-size: 0;
+	line-height: 0;
+}
+
+.product_list ul li.item_list {
+	width: 279px;
+	margin: 0 14px 50px;
+	display: inline-block;
+	color: #555;
+	vertical-align: top;
+	text-align: left;
+}
+
+.product_list ul li.item_list .item_box {
+	width: 279px;
+	margin: 0 auto;
+	font-size: 12px;
+	line-height: 16px;
+	position: relative;
+}
+
+.middle_area {
+	margin: 80px 0 100px 0;
+}
+
+.middle_area .middle_bg {
+	position: relative;
+	width: 1200px;
+	height: 340px;
+	background: url(/VMT/assets/images/middlebg.jpg) no-repeat center top
+		fixed;
+	overflow: hidden;
+	text-align: center;
+}
+
+.middle_area .middle_bg .middle_copy {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1200px;
+	height: 340px;
+	line-height: 340px;
+	color: #fff;
+	font-family: 'Radley', serif;
+	font-style: italic;
+	font-size: 33px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #777777;
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=90,Color='#777777')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90,
+		Color='#777777');
+	filter: DropShadow(Color = #777777, OffX = 0, OffY = 1);
+}
+
+/*	Footer */
+footer #inner {
+	position: relative;
+	width: 1200px;
+	margin: 100px auto 0;
+	line-height: 21px;
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	font-size: 11px;
+	border-top: 2px solid #222;
+}
+
+footer #copyright {
+	text-align: left;
+	width: 1200px;
+	margin: 20px auto 30px;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	font-size: 11px;
+	color: #222;
+	font-weight: normal;
+}
+
+/* The product shortcut button ( item 4 ) */
+#quick_item {
+	position: absolute;
+	top: 177px;
+	left: 50%;
+	margin: 0 0 0 630px;
+	width: 90px;
+}
