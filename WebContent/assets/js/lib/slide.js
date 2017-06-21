@@ -24,6 +24,7 @@ var InfiniteRotator = {
 		}
 
 		// 초기 박스 셋팅
+		$('.rotating-item').eq(InfiniteRotator.currentItem).stop(true,true).fadeIn(initialFadeIn);
 		$('.slide_rect').eq(InfiniteRotator.currentItem).addClass('slide_active');
 
 		// loop through the items
