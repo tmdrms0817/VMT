@@ -172,6 +172,7 @@ section #rolling {
 
 .rolling_banner ul li img {
 	max-height: 196px;
+	max-width: 190px;
 	vertical-align: middle;
 }
 

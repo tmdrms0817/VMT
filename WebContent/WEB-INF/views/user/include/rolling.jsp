@@ -12,45 +12,45 @@
 		
 		<!-- 롤링 배너 데이터  -->
 		<div class="rolling_banner">
-			<ul style="width: 3000px;">
-				<li>
+			<ul class="rolling_list">
+				<li class="rolling-item">
 					<a href="">
-						<img src="${pageContext.request.contextPath}/assets/images/rolling01.jpg" class="rolling-item" alt="main rolling images"/>
+						<img src="${pageContext.request.contextPath}/assets/images/rolling01.jpg"  alt="main rolling images"/>
 					</a>
 				</li>
-				<li>
+				<li class="rolling-item">
 					<a href="">
-						<img src="${pageContext.request.contextPath}/assets/images/rolling02.jpg" class="rolling-item" alt="main rolling images"/>
+						<img src="${pageContext.request.contextPath}/assets/images/rolling02.jpg" alt="main rolling images"/>
 					</a>
 				</li>
-				<li>
+				<li class="rolling-item">
 					<a href="">
-						<img src="${pageContext.request.contextPath}/assets/images/rolling03.jpg" class="rolling-item" alt="main rolling images"/>
+						<img src="${pageContext.request.contextPath}/assets/images/rolling03.jpg" alt="main rolling images"/>
 					</a>
 				</li>
-				<li>
+				<li class="rolling-item">
 					<a href="">
-						<img src="${pageContext.request.contextPath}/assets/images/rolling04.jpg" class="rolling-item" alt="main rolling images"/>
+						<img src="${pageContext.request.contextPath}/assets/images/rolling04.jpg" alt="main rolling images"/>
 					</a>
 				</li>
-				<li>
+				<li class="rolling-item">
 					<a href="">
-						<img src="${pageContext.request.contextPath}/assets/images/rolling05.jpg" class="rolling-item" alt="main rolling images"/>
+						<img src="${pageContext.request.contextPath}/assets/images/rolling05.jpg" alt="main rolling images"/>
 					</a>
 				</li>
-				<li>
+				<li class="rolling-item">
 					<a href="">
-						<img src="${pageContext.request.contextPath}/assets/images/rolling06.jpg" class="rolling-item" alt="main rolling images"/>
+						<img src="${pageContext.request.contextPath}/assets/images/rolling06.jpg" alt="main rolling images"/>
 					</a>
 				</li>
-				<li>
+				<li class="rolling-item">
 					<a href="">
-						<img src="${pageContext.request.contextPath}/assets/images/rolling07.jpg" class="rolling-item" alt="main rolling images"/>
+						<img src="${pageContext.request.contextPath}/assets/images/rolling07.jpg" alt="main rolling images"/>
 					</a>
 				</li>
-				<li>
+				<li class="rolling-item">
 					<a href="">
-						<img src="${pageContext.request.contextPath}/assets/images/rolling08.jpg" class="rolling-item" alt="main rolling images"/>
+						<img src="${pageContext.request.contextPath}/assets/images/rolling08.jpg" alt="main rolling images"/>
 					</a>
 				</li>
 			</ul>

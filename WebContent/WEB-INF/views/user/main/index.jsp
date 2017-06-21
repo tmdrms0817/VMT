@@ -13,7 +13,8 @@
 		<link href="${pageContext.servletContext.contextPath }/assets/css/user.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/jquery/jquery-1.9.0.js"></script>    
 		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/slide.js"></script>
-		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/rolling.js"></script>		
+		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/rolling.js"></script>	
+		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/window.js"></script>		
 	</head>
 	<body>
 		<div id="wrap">
