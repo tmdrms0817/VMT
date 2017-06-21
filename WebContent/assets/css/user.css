@@ -65,10 +65,14 @@ section #slide {
 }
 
 .slide_main {
-	position: relative;
+	position: absolute;
 	overflow: hidden;
 	width: 876px;
 	height: 506px;
+}
+
+#slide .cloth_list {
+	float: right;
 }
 
 #slide .cloth_list_data {
@@ -161,7 +165,7 @@ section #rolling {
 	font-size: 0;
 	line-height: 0;
 	width: 1100px;
-	margins-left:-190px;
+	margins-left: -190px;
 }
 
 .rolling_banner ul li {

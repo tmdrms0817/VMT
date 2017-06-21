@@ -9,7 +9,7 @@
 		<div class="slide_main">
 			<!-- 이미지는 고정을 하든 아니면 DB에서 받아와야함.  -->
 			<img src="${pageContext.request.contextPath}/assets/images/slide.jpg" class="rotating-item" alt="main slide images"/>
-			<img src="${pageContext.request.contextPath}/assets/images/slide2.jpg" class="rotating-item" alt="main slide images"/>
+			<img src="${pageContext.request.contextPath}/assets/images/slide2.jpg" class="rotating-item" alt="main slide images" />
 			<img src="${pageContext.request.contextPath}/assets/images/slide3.jpg" class="rotating-item" alt="main slide images"/>
 			<ul class="slide_nav">
 				<li class="slide_rect"></li>

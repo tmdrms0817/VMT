@@ -16,26 +16,21 @@ var InfiniteRotator = {
 		var initialFadeIn = 1000;
 
 		if (InfiniteRotator.currentItem != -1) {
-			$('.rotating-item').fadeOut(fadeTime);
+			$('.rotating-item').stop(true,true).fadeOut(fadeTime);
 			$('.slide_rect').removeClass('slide_active');
 
 		} else {
 			InfiniteRotator.currentItem = 0;
 		}
 
-		// 초기 이미지 셋팅
-		$('.rotating-item').eq(InfiniteRotator.currentItem).fadeIn(
-				initialFadeIn);
-		$('.slide_rect').eq(InfiniteRotator.currentItem).addClass(
-				'slide_active');
+		// 초기 박스 셋팅
+		$('.slide_rect').eq(InfiniteRotator.currentItem).addClass('slide_active');
 
 		// loop through the items
 		this.infiniteLoop = setInterval(function() {
 
-			$('.rotating-item').eq(InfiniteRotator.currentItem).fadeOut(
-					fadeTime);
-			$('.slide_rect').eq(InfiniteRotator.currentItem).removeClass(
-					'slide_active');
+			$('.rotating-item').eq(InfiniteRotator.currentItem).stop(true,true).fadeOut(fadeTime);
+			$('.slide_rect').eq(InfiniteRotator.currentItem).removeClass('slide_active');
 
 			if (InfiniteRotator.currentItem == numberOfItems - 1) {
 				InfiniteRotator.currentItem = 0;
@@ -43,10 +38,8 @@ var InfiniteRotator = {
 				InfiniteRotator.currentItem++;
 			}
 
-			$('.rotating-item').eq(InfiniteRotator.currentItem)
-					.fadeIn(fadeTime);
-			$('.slide_rect').eq(InfiniteRotator.currentItem).addClass(
-					'slide_active');
+			$('.rotating-item').eq(InfiniteRotator.currentItem).stop(true,true).fadeIn(fadeTime);
+			$('.slide_rect').eq(InfiniteRotator.currentItem).addClass('slide_active');
 
 		}, itemInterval);
 
