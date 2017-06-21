@@ -1,67 +1,108 @@
 var InfiniteRolling = {
-	infiniteLoop : 0,
-	direction : 0,
-	maxWidth : 190,
-	init : function() {
+	moveType : 0,
+	moveSpeed : 1000,
+	moveWork : false,
+	movePause : false,
+	Item : null,
+	imgMove : function() {
+		if (this.moveWork == false) {
+			if (InfiniteRolling.Item != null) {
+				InfiniteRolling.Item.remove();
+				InfiniteRolling.Item = null;
+			}
 
-		// 타이머 실행 시간
-		var itemInterval = 50;
-
-		$("ul.rolling_list").css("width", (this.maxWidth * $('li.rolling-item').length).toString()+"px");
-
-		this.infiniteLoop = setInterval(function() {
-			if (InfiniteRolling.direction === 0) {
-				var Item = $("li.rolling-item:first");
-				var marginDirec = "margin-left";
+			if (this.moveType == 0) {
+				this.Item = $("li.rolling-item:first");
+				var aWidth = this.Item.width();
+				this.Item.parent().append(
+						"<li class=\"rolling-item\">" + this.Item.html()
+								+ "</li>");
+				this.Item.animate({
+					marginLeft : -aWidth
+				}, {
+					duration : this.moveSpeed,
+					step : function() {
+						if (InfiniteRolling.movePause == true) {
+							$(this).stop();
+						}
+					},
+					complete : function() {
+						InfiniteRolling.Item.remove();
+						InfiniteRolling.Item = null;
+						InfiniteRolling.imgMove();
+					}
+				});
 			} else {
-				var Item = $("li.rolling-item:last");
-				var marginDirec = "margin-right";
+				this.Item = $("li.rolling-item:last");
+				var aWidth = this.Item.width();
+
+				this.Item.parent()
+						.prepend(
+								"<li class=\"rolling-item\" style=\"margin-left:-"
+										+ aWidth + "px\">" + this.Item.html()
+										+ "</li>");
+				$("li.rolling-item:first").animate({
+					marginLeft : 0
+				}, {
+					duration : this.moveSpeed,
+					step : function() {
+						if (InfiniteRolling.movePause == true) {
+							$(this).stop();
+						}
+					},
+					complete : function() {
+						InfiniteRolling.Item.remove();
+						InfiniteRolling.Item = null;
+						InfiniteRolling.imgMove();
+					}
+				});
 			}
-
-			var marginData = Math.abs(parseInt(Item.css(marginDirec)));
-
-			if (marginData === InfiniteRolling.maxWidth) {
-				Item.css(marginDirec, "");
-				Item.parent().append(Item);
-				marginData = 0;
-			}
-
-			var num = -(marginData + 1);
-			var n = num.toString() + "px";
-			$("li.rolling-item:first").css(marginDirec, n);
-
-		}, itemInterval);
+		}
+	},
+	goMove : function() {
+		this.movePause = false;
+		if (this.moveType == 0) {
+			this.imgMove();
+		} else {
+			$("li.rolling-item:first").animate({
+				marginLeft : 0
+			}, {
+				duration : this.moveSpeed,
+				step : function() {
+					if (InfiniteRolling.movePause == true) {
+						$(this).stop();
+					}
+				},
+				complete : function() {
+					InfiniteRolling.imgMove();
+				}
+			});
+		}
 
 	}
-
 };
 
-$(window).load(function() {
-
-	// 로딩시 시작
-	InfiniteRolling.init();
-
-	// 마우스가 해당 박스위에 올라가면 타이머 진행
+//$(window).load(function() {
+//
+//	// 로딩시 시작
+//	InfiniteRolling.imgMove();
+//
+//	// 마우스가 해당 박스위에 올라가면 타이머 진행
 //	$("ul.rolling_list").hover(function() {
-//		clearInterval(InfiniteRolling.infiniteLoop);
+//		InfiniteRolling.movePause = true;
 //	}, function() {
-//		InfiniteRolling.init();
+//		InfiniteRolling.goMove();
 //	});
 //
 //	// 왼쪽에 대한 처리
 //	$("li.roll_btn_left").hover(function() {
-//		clearInterval(InfiniteRolling.infiniteLoop);
-//	}, function() {
-//		InfiniteRolling.direction = 0;
-//		InfiniteRolling.init();
+//		InfiniteRolling.moveType = 0;
 //	});
 //
 //	// 오른쪽에 대한 처리
 //	$("li.roll_btn_right").hover(function() {
-//		clearInterval(InfiniteRolling.infiniteLoop);
-//	}, function() {
-//		InfiniteRolling.direction = 1;
-//		InfiniteRolling.init();
+//		InfiniteRolling.moveType = 1;
+//		console.log("InfiniteRolling.moveType=" + InfiniteRolling.moveType);
 //	});
-
-});
+//
+//});
