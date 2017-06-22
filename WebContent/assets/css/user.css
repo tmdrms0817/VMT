@@ -5,6 +5,11 @@
 	// 파 일 설 명   : User page-only style sheet 
 	//###############################################
 */
+a:hover {
+	opacity: 0.6;
+	filter: alpha(opacity = 60); /* For IE8 and earlier */;
+}
+
 #wrap {
 	position: relative;
 	overflow: hidden;
@@ -249,6 +254,13 @@ section #main {
 	clear: both;
 }
 
+#contents:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* product list */
 .product_list h2 {
 	padding: 40px 0 30px;
 	text-align: center;
@@ -266,7 +278,76 @@ section #main {
 	font-size: 15px;
 }
 
-.product_list ul {
+.item_sub_category_list {
+    font-size: 0;
+    line-height: 0;
+    text-align: left;
+}
+
+.item_sub_category_list > li {
+    display: inline-block;
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 11px;
+    line-height: 14px;
+    vertical-align: top;
+}
+
+.item_sub_category_list > li > a {
+    font-family: 'dotum',sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin: 0 20px 0 0;
+}
+
+.item_selector {
+	margin: 0;
+	padding: 10px 0 0;
+	letter-spacing: 1px;
+	font-size: 10px;
+	color: #aaa;
+	font-family: 'Lato', sans-serif;
+	font-size: 10px;
+	margin: 0 0 20px;
+}
+
+.item_selector_content {
+	overflow: hidden;
+	text-align: right;
+	line-height: 38px;
+}
+
+.itemCount {
+	float: left;
+}
+
+.itemCount strong {
+	color: #222;
+}
+
+.item_selector_type {
+	display: inline;
+}
+
+.item_selector_type li:first-child {
+	background: none;
+}
+
+.item_selector_type li {
+	display: inline;
+	padding: 0 0 0 15px;
+}
+
+.item_selector_type li a {
+	color: #aaa;
+}
+
+.product_list .hit_item_list {
+	margin: 30px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.product_list .item_list_ul {
 	width: 1228px;
 	margin: 0 -14px;
 	display: table;
@@ -291,6 +372,94 @@ section #main {
 	position: relative;
 }
 
+.item_box .item_best_tag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 0 1px 3px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    background: #222;
+    z-index: 50;
+    font-family: 'Lato',sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.item_box p {
+	margin: 10px 0 6px;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+}
+
+.item_box p a {
+	color: #222;
+}
+
+.item_box .item_list_price {
+	font-size: 12px;
+	color: #555555;
+	font-weight: bold;
+}
+
+.item_box .item_list_count_color {
+	font-size: 12px;
+	color: #555555;
+}
+
+.item_list_pager {
+	margin: 0;
+	padding: 30px 0 40px;
+	text-align: center;
+	font-family: 'arial';
+	font-size: 0;
+}
+
+.item_list_pager p {
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #ddd;
+	border-left: 0;
+}
+
+.item_list_pager .item_list_page_first {
+	margin: 0;
+	border: 1px solid #ddd;
+}
+
+.item_list_pager ol {
+	display: inline-block;
+	margin: 0;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: top;
+}
+
+.item_list_pager ol li {
+	display: inline-block;
+	margin: 0;
+	font-size: 11px;
+	color: #757575;
+	vertical-align: top;
+	border: 1px solid #ddd;
+	border-left: 0;
+}
+
+.item_list_pager ol li a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	padding: 0;
+	color: #222;
+	background: #fff;
+}
+
+/* middle area */
 .middle_area {
 	margin: 80px 0 100px 0;
 }

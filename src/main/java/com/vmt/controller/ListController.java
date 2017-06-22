@@ -5,11 +5,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class MainController {
+@RequestMapping("/list")
+public class ListController {
 
-	@RequestMapping( { "/", "/main" } )
-	public String index(Model model){
-		model.addAttribute("page","main");
-		return "user/main/index";
+	@RequestMapping( { "", "/" } )
+	public String list(Model model){
+		model.addAttribute("page","list");
+		return "user/list/list";
 	}
 }
