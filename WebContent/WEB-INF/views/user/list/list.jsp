@@ -9,6 +9,7 @@
 		<title>T&F</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/images/favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu" rel="stylesheet">
 		<link href="${pageContext.servletContext.contextPath }/assets/css/common.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.servletContext.contextPath }/assets/css/user.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/jquery/jquery-1.9.0.js"></script>    

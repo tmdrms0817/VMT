@@ -1,0 +1,88 @@
+/*
+	//###############################################
+	// 경  로  명    : assets/css
+	// 파  일  명    : admin.css
+	// 파 일 설 명   : Admin page-only style sheet 
+	//###############################################
+*/
+a:hover {
+	opacity: 0.6;
+	filter: alpha(opacity = 60); /* For IE8 and earlier */;
+}
+
+#wrap {
+	position: relative;
+	overflow: hidden;
+	min-width: 1200px;
+}
+
+/* Management Bar (LOGIN , JOIN, CART, ORDER, MY PAGE) */
+header #top {
+	height: 60px;
+	background: #fff;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #ddd;
+}
+
+#top .logo {
+	float: left;
+	margin-top: 20px;
+	font-family: 'Crete Round', serif;
+	margin-left: 15px;
+	color: blue;
+}
+
+#top .top_navi {
+	float: right;
+	margin-right: 15px;
+	margin-top: 35px;
+}
+
+#top .top_navi>ul>li {
+	display: inline-block;
+	font-size: 11px;
+	line-height: 14px;
+	border-right: 1px solid black;
+    padding-right: 7px;
+}
+
+/*	Main Contents */
+section #main {
+	position: relative;
+}
+
+#main #contents {
+	width: 1200px;
+	margin: 50px auto 0;
+}
+
+#contents .welcome_tag {
+	margin: 0 auto;
+	width: 730px;
+}
+
+#contents .welcome_tag>h1 {
+	font-family: 'Crete Round', serif;
+	font-size: 55px;
+}
+
+#contents .choice_box {
+	margin: 150px auto 0;
+	width: 730px;
+}
+
+#contents .choice_box>button {
+	outline: 0;
+	background: none;
+	width: 300px;
+	height: 150px;
+}
+
+#contents .choice_box .site_make_btn {
+	float: left;
+}
+
+#contents .choice_box .site_decorate_btn {
+	float: right;
+}

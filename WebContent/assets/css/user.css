@@ -526,3 +526,87 @@ footer #copyright {
 	margin: 0 0 0 630px;
 	width: 90px;
 }
+
+/* Board List */
+
+.titleArea {
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+.titleArea h2 {
+    display: block;
+    font-family: 'Lato',sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.titleArea p {
+    display: block;
+    color: #888888;
+    margin: 10px 0 0;
+}
+
+.boardList {
+    clear: both;
+}
+
+.boardList table {
+	width: 100%;
+    border: 0;
+    border-spacing: 0;
+    color: #333;
+    font-size: 11px;
+    line-height: 140%;
+    border-bottom: 1px solid #ddd;
+    border-collapse: separate;
+}
+
+.boardList table th {
+    padding: 12px 0 10px;
+    font-weight: normal;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-top: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+.boardList table .number {
+    width: 50px;
+}
+
+.boardList table .product {
+    width: 145px;
+}
+
+.boardList table .writer {
+    width: 84px;
+}
+
+.boardList table .date {
+    width: 80px;
+}
+
+.boardList table .hit {
+    width: 50px;
+}
+
+.boardList table td {
+    padding: 6px 3px 6px;
+    height: 32px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.boardList table td.subject {
+    text-align: left;
+    word-break: break-all;
+    padding: 0 0 0 15px;
+    line-height: 150%;
+}
+
+.boardList table td.subject {
+    font-weight: bold;
+}
