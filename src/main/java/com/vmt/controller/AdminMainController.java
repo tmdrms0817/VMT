@@ -9,6 +9,11 @@ public class AdminMainController {
 	
 	@RequestMapping( { "", "/" } )
 	public String index(){
-		return "admin/main/index";
+		return "user/admin/admin";
+	}
+	
+	@RequestMapping("/product")
+	public String ProductRegistration(){
+		return "user/admin/product";
 	}
 }

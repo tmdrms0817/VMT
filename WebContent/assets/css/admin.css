@@ -5,84 +5,153 @@
 	// 파 일 설 명   : Admin page-only style sheet 
 	//###############################################
 */
-a:hover {
-	opacity: 0.6;
-	filter: alpha(opacity = 60); /* For IE8 and earlier */;
-}
-
-#wrap {
-	position: relative;
-	overflow: hidden;
-	min-width: 1200px;
-}
-
-/* Management Bar (LOGIN , JOIN, CART, ORDER, MY PAGE) */
-header #top {
-	height: 60px;
-	background: #fff;
-	font-family: 'Lato', sans-serif;
-	letter-spacing: 1px;
-	border-bottom: 1px solid #ddd;
-}
-
-#top .logo {
+.left_nav {
 	float: left;
-	margin-top: 20px;
-	font-family: 'Crete Round', serif;
+	width: 150px;
+	border: 1px solid;
+	height: 500px;
+}
+
+.left_nav_ul {
+	width: 100%;
+	height: 100%;
+	float: left;
+	margin: 0;
+}
+
+.left_nav_ul li {
+	text-align: center;
+	height: 25px;
+	font-weight: bold;
+	line-height: initial;
+	border-bottom: 1px solid;
+	cursor: pointer;
+}
+
+.admin_content {
+	width: 950px;
+	position: relative;
+	float: left;
+}
+
+.admin_content_title {
+	height: 35px;
+	margin-left: 50px;
+	border-bottom: 1px solid;
+}
+
+.admin_content_title p {
+	font-weight: bold;
+	line-height: initial;
+	color: rgb(44, 62, 80);
+	font-size: 13px;
+}
+
+.admin_category_tab {
+	width: 234px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+ul.admin_tabs_ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	font-family: "dotum";
+	font-size: 12px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+ul.admin_tabs_ul li {
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	width: 115px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #9e9e9e;
+	font-weight: bold;
+	background: #fafafa;
+	border-radius: 10px 10px 0px 0px;
+}
+
+ul.admin_tabs_ul li.active {
+	background: #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.admin_tab_container {
+	border: 1px solid #eee;
+	border-top: none;
+	clear: both;
+	float: left;
+	width: 233px;
+	background: #FFFFFF;
+	word-break: break-all;
+}
+
+.admin_tab_content {
+	padding: 5px;
+	font-size: 12px;
+	display: none;
+	border: 1px solid #9e9e9e;
+	height: 300px;
+}
+
+.admin_category_container {
+	position: relative;
+	float: right;
+	width: 660px;
+	height: 500px;
+	margin-top: -35px;
+}
+
+.admin_custom_category {
+	padding-left: 10px;
+}
+
+.admin_custom_category li {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 2;
+}
+
+.admin_custom_category li ul {
 	margin-left: 15px;
-	color: blue;
 }
 
-#top .top_navi {
-	float: right;
-	margin-right: 15px;
-	margin-top: 35px;
+.admin_custom_category li ul>li {
+	font-weight: normal;
 }
 
-#top .top_navi>ul>li {
-	display: inline-block;
-	font-size: 11px;
-	line-height: 14px;
-	border-right: 1px solid black;
-    padding-right: 7px;
+.admin_categor_input_box {
+	margin-left: 50px;
+	margin-top: 20px;
 }
 
-/*	Main Contents */
-section #main {
-	position: relative;
+.admin_categor_input_box .admin_category_input_title {
+	display: block;
+	font-size: 14px;
+	color: rgb(44, 62, 80);
+	text-decoration: none;
+	font-family: "Comic Sans MS";
+	font-weight: bold;
+	line-height: 2.5em;
+	font-style: normal;
 }
 
-#main #contents {
-	width: 1200px;
-	margin: 50px auto 0;
+#admin_category_input_data {
+	padding: 6px 12px;
+	width: 250px;
+	height: 100%;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-sizing: border-box;
+	resize: none;
+	font-size: 14px;
 }
 
-#contents .welcome_tag {
-	margin: 0 auto;
-	width: 730px;
-}
 
-#contents .welcome_tag>h1 {
-	font-family: 'Crete Round', serif;
-	font-size: 55px;
-}
-
-#contents .choice_box {
-	margin: 150px auto 0;
-	width: 730px;
-}
-
-#contents .choice_box>button {
-	outline: 0;
-	background: none;
-	width: 300px;
-	height: 150px;
-}
-
-#contents .choice_box .site_make_btn {
-	float: left;
-}
-
-#contents .choice_box .site_decorate_btn {
-	float: right;
-}
