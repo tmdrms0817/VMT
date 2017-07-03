@@ -15,7 +15,8 @@
 		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/jquery/jquery-1.9.0.js"></script>    
 		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/slide.js"></script>
 		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/rolling.js"></script>	
-		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/window.js"></script>		
+		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/window.js"></script>
+		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/fixed.js"></script>			
 	</head>
 	<body>
 		<div id="wrap">
