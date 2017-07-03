@@ -19,7 +19,7 @@
 	<!--  LOGO -->
 	<div id="loge">
 		<div id="main_logo">
-			<a href="/main"> 
+			<a href="${pageContext.servletContext.contextPath }/main"> 
 				<img alt="T & F" src="${pageContext.request.contextPath}/assets/images/top_logo.png" alt="logo images" />
 			</a>
 		</div>

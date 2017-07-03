@@ -19,7 +19,7 @@ a:hover {
 /* Management Bar (LOGIN , JOIN, CART, ORDER, MY PAGE) */
 header #top {
 	margin: 0 auto;
-    width: 1200px;
+	width: 1200px;
 	height: 45px;
 	line-height: 45px;
 	background: #fff;
@@ -27,16 +27,16 @@ header #top {
 	letter-spacing: 1px;
 	z-index: 91 !important;
 }
-header #top ul li
-{
-	float : right;
+
+header #top ul li {
+	float: right;
 	position: relative;
-    display: inline-block;
-    padding: 0 0 0 10px;
-    font-size: 10px;
+	display: inline-block;
+	padding: 0 0 0 10px;
+	font-size: 10px;
 }
-header #top ul li a
-{
+
+header #top ul li a {
 	text-decoration: none;
 	color: #222;
 }
@@ -71,70 +71,70 @@ header #loge {
 
 /* Site Navigation Bar */
 .fixed {
-    position: fixed;
-    top: 0px;
-    left: 350px;
-    margin : 0px auto;
-	width : 1200px;
+	position: fixed;
+	top: 0px;
+	left: 350px;
+	margin: 0px auto;
+	width: 1200px;
 	height: 55px;
 	border-top: 1px solid #222;
 	border-bottom: 1px solid #ddd;
-	padding : 5px 10px;
-	background : #fff;
-	z-index:1;
-	fadeIn(3000);
-	
+	padding: 5px 10px;
+	background: #fff;
+	z-index: 60;
+	fadeIn
+	(3000);
 }
-.fixed ul li
-{
-	float : left;
+
+.fixed ul li {
+	float: left;
 	position: relative;
-    display: inline-block;
-    margin-right: 25px;
-    line-height: 55px;
+	display: inline-block;
+	margin-right: 25px;
+	line-height: 55px;
 }
-.fixed ul li a
-{
+
+.fixed ul li a {
 	display: block;
-    color: #222;
-    text-decoration: none;
-    font-size: 11px;
+	color: #222;
+	text-decoration: none;
+	font-size: 11px;
 }
+
 header nav {
 	height: 55px;
-	
 }
-header #item_menu
-{
-	width : 803px;
-	float : left;
+
+header #item_menu {
+	width: 803px;
+	float: left;
 }
-header #bord_menu li 
-{
-	float : right;
+
+header #bord_menu li {
+	float: right;
 }
-header .menu
-{
-	margin : 0px auto;
-	width : 1200px;
+
+header .menu {
+	margin: 0px auto;
+	width: 1200px;
 	border-top: 1px solid #222;
 	border-bottom: 1px solid #ddd;
-	padding : 5px 10px;
+	padding: 5px 10px;
 }
-header .menu ul li
-{
-	float : left;
+
+header .menu ul li {
+	float: left;
 	position: relative;
-    display: inline-block;
-    margin-right: 25px;
-    line-height: 55px;
+	display: inline-block;
+	margin-right: 25px;
+	line-height: 55px;
 }
-header .menu ul li a
-{
+
+header .menu ul li a {
 	display: block;
-    color: #222;
-    text-decoration: none;
-    font-size: 11px;
+	color: #222;
+	text-decoration: none;
+	font-size: 11px;
 }
 
 /* Slide Banner */
@@ -357,25 +357,25 @@ section #main {
 }
 
 .item_sub_category_list {
-    font-size: 0;
-    line-height: 0;
-    text-align: left;
+	font-size: 0;
+	line-height: 0;
+	text-align: left;
 }
 
-.item_sub_category_list > li {
-    display: inline-block;
-    margin: 0 0 15px;
-    padding: 0;
-    font-size: 11px;
-    line-height: 14px;
-    vertical-align: top;
+.item_sub_category_list>li {
+	display: inline-block;
+	margin: 0 0 15px;
+	padding: 0;
+	font-size: 11px;
+	line-height: 14px;
+	vertical-align: top;
 }
 
-.item_sub_category_list > li > a {
-    font-family: 'dotum',sans-serif;
-    font-size: 11px;
-    letter-spacing: 1px;
-    margin: 0 20px 0 0;
+.item_sub_category_list>li>a {
+	font-family: 'dotum', sans-serif;
+	font-size: 11px;
+	letter-spacing: 1px;
+	margin: 0 20px 0 0;
 }
 
 .item_selector {
@@ -451,21 +451,21 @@ section #main {
 }
 
 .item_box .item_best_tag {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 40px;
-    height: 22px;
-    line-height: 22px;
-    padding: 0 0 1px 3px;
-    text-align: center;
-    font-weight: 500;
-    color: #fff;
-    background: #222;
-    z-index: 50;
-    font-family: 'Lato',sans-serif;
-    font-size: 10px;
-    letter-spacing: 2px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 22px;
+	line-height: 22px;
+	padding: 0 0 1px 3px;
+	text-align: center;
+	font-weight: 500;
+	color: #fff;
+	background: #222;
+	z-index: 50;
+	font-family: 'Lato', sans-serif;
+	font-size: 10px;
+	letter-spacing: 2px;
 }
 
 .item_box p {
@@ -606,85 +606,84 @@ footer #copyright {
 }
 
 /* Board List */
-
 .titleArea {
-    margin: 0 0 30px;
-    text-align: center;
+	margin: 0 0 30px;
+	text-align: center;
 }
 
 .titleArea h2 {
-    display: block;
-    font-family: 'Lato',sans-serif;
-    font-weight: 500;
-    letter-spacing: 3px;
-    font-size: 15px;
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	letter-spacing: 3px;
+	font-size: 15px;
 }
 
 .titleArea p {
-    display: block;
-    color: #888888;
-    margin: 10px 0 0;
+	display: block;
+	color: #888888;
+	margin: 10px 0 0;
 }
 
 .boardList {
-    clear: both;
+	clear: both;
 }
 
 .boardList table {
 	width: 100%;
-    border: 0;
-    border-spacing: 0;
-    color: #333;
-    font-size: 11px;
-    line-height: 140%;
-    border-bottom: 1px solid #ddd;
-    border-collapse: separate;
+	border: 0;
+	border-spacing: 0;
+	color: #333;
+	font-size: 11px;
+	line-height: 140%;
+	border-bottom: 1px solid #ddd;
+	border-collapse: separate;
 }
 
 .boardList table th {
-    padding: 12px 0 10px;
-    font-weight: normal;
-    font-size: 10px;
-    letter-spacing: 1px;
-    border-top: 1px solid #ddd;
-    text-transform: uppercase;
+	padding: 12px 0 10px;
+	font-weight: normal;
+	font-size: 10px;
+	letter-spacing: 1px;
+	border-top: 1px solid #ddd;
+	text-transform: uppercase;
 }
 
 .boardList table .number {
-    width: 50px;
+	width: 50px;
 }
 
 .boardList table .product {
-    width: 145px;
+	width: 145px;
 }
 
 .boardList table .writer {
-    width: 84px;
+	width: 84px;
 }
 
 .boardList table .date {
-    width: 80px;
+	width: 80px;
 }
 
 .boardList table .hit {
-    width: 50px;
+	width: 50px;
 }
 
 .boardList table td {
-    padding: 6px 3px 6px;
-    height: 32px;
-    border-top: 1px solid #eee;
-    text-align: center;
-    vertical-align: middle;
+	padding: 6px 3px 6px;
+	height: 32px;
+	border-top: 1px solid #eee;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .boardList table td.subject {
-    text-align: left;
-    word-break: break-all;
-    padding: 0 0 0 15px;
-    line-height: 150%;
+	text-align: left;
+	word-break: break-all;
+	padding: 0 0 0 15px;
+	line-height: 150%;
 }
 
 .boardList table td.subject {
-    font-weight: bold;
+	font-weight: bold;
 }

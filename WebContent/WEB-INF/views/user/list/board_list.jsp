@@ -12,7 +12,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu" rel="stylesheet">
 		<link href="${pageContext.servletContext.contextPath }/assets/css/common.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.servletContext.contextPath }/assets/css/user.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/jquery/jquery-1.9.0.js"></script>    
+		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/jquery/jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/fixed.js"></script>	    
 	</head>
 	<body>
 		<div id="wrap">
