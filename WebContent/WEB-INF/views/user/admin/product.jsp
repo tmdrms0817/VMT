@@ -60,9 +60,9 @@
 								<p>100*100 사이즈 파일로만 올려주세요</p>
 							</div>
 							<div class="admin_product_input_img">
-								<img src=""></img>
+								<img src="${pageContext.request.contextPath}/assets/images/none_img.svg"></img>
 								<p>1</p>
-								<input type="file"/>
+								<input type="file" class="product_img_upfile"/>
 							</div>
 						</div>
 

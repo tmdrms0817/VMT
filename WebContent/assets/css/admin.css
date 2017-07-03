@@ -38,6 +38,7 @@
 	height: 35px;
 	margin-left: 50px;
 	border-bottom: 1px solid;
+	border-color: #888;
 }
 
 .admin_content_title p {
@@ -154,4 +155,95 @@ ul.admin_tabs_ul li.active {
 	font-size: 14px;
 }
 
+.admin_product_category_wrap {
+	position: relative;
+	height: 150px;
+	border-bottom: 1px solid;
+	margin-left: 50px;
+	border-color: #888;
+}
 
+.admin_product_category_wrap h1 {
+	font-weight: bold;
+	color: #2c3e50;
+	font-size: 13px;
+	float: left;
+	line-height: 150px;
+}
+
+.admin_product_category_wrap div {
+	width: 200px;
+	height: 100px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 25px;
+	border: 1px solid;
+}
+
+.admin_product_category_wrap button {
+	outline: 0;
+	background: none;
+	float: left;
+	margin-left: 50px;
+	margin-top: 45px;
+	width: 100px;
+	height: 60px;
+	cursor: pointer;
+	border-radius: 4px;
+	background-color: #e0e0e0;
+}
+
+.admin_product_input_title {
+	height: 50px;
+	margin-left: 50px;
+	border-bottom: 1px solid;
+	border-color: #888;
+}
+
+.admin_product_input_title h1 {
+	font-weight: bold;
+	line-height: 60px;
+	color: #2c3e50;
+	font-size: 13px;
+}
+
+.admin_product_input_wrap {
+	margin-left: 50px;
+}
+
+.admin_product_input_ex h1 {
+	font-size: 14px;
+	color: #2c3e50;
+	font-weight: bold;
+	line-height: 2.5em;
+	text-align: center;
+}
+
+.admin_product_input_ex p {
+	font-size: 12px;
+	color: #95a5a6;
+	font-weight: bold;
+	line-height: 2.5em;
+	text-align: center;
+}
+
+.admin_product_input_img {
+	display: block;
+	float: left;
+}
+
+.admin_product_input_img img {
+	width: 100px;
+	height: 100px;
+	display: block;
+	float: left;
+}
+
+.admin_product_input_img p {
+	display: block;
+	clear: both;
+	width: 100px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
