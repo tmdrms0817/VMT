@@ -22,23 +22,23 @@
 		<div id="wrap">
 		
 			<!-- Header -->
-			<c:import url="/WEB-INF/views/user/include/header.jsp" />
+			<c:import url="/WEB-INF/views/include/header.jsp" />
 			
 			<!-- Contents -->
 			<section>
 			
 				<!-- Slide Banner -->
-				<c:import url="/WEB-INF/views/user/include/slide.jsp" />
+				<c:import url="/WEB-INF/views/include/slide.jsp" />
 				
 				<!-- Automatic Rolling Banner -->
-				<c:import url="/WEB-INF/views/user/include/rolling.jsp" />
+				<c:import url="/WEB-INF/views/include/rolling.jsp" />
 				
 				<!-- Main Contents -->
 				<article id ="main">
 					<section id ="contents">
 					
 						<!-- NEW UPDATE ITEM (row - 2 , col - 4) -->
-						<c:import url="/WEB-INF/views/user/include/product_list.jsp" />
+						<c:import url="/WEB-INF/views/include/product_list.jsp" />
 						
 						<!-- Images Area -->
 						<article class="middle_area">
@@ -48,7 +48,7 @@
 						</article>
 						
 						<!-- NEW ITEM -->
-						<c:import url="/WEB-INF/views/user/include/product_list.jsp" />
+						<c:import url="/WEB-INF/views/include/product_list.jsp" />
 						
 					</section>
 				</article>
@@ -56,10 +56,10 @@
 			</section>
 			
 			<!-- The product shortcut button ( item 4 ) -->
-			<c:import url="/WEB-INF/views/user/include/quick_item.jsp" />
+			<c:import url="/WEB-INF/views/include/quick_item.jsp" />
 			
 			<!-- Footer -->
-			<c:import url="/WEB-INF/views/user/include/footer.jsp" />
+			<c:import url="/WEB-INF/views/include/footer.jsp" />
 			
 		</div>
 	</body>

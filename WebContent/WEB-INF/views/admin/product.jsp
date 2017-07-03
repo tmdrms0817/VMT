@@ -6,29 +6,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>T&F</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link rel="shortcut icon"
-	href="${pageContext.request.contextPath}/assets/images/favicon.ico">
-<link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu"
-	rel="stylesheet">
-<link
-	href="${pageContext.servletContext.contextPath }/assets/css/common.css"
-	rel="stylesheet" type="text/css">
-<link
-	href="${pageContext.servletContext.contextPath }/assets/css/user.css"
-	rel="stylesheet" type="text/css">
-<link
-	href="${pageContext.servletContext.contextPath }/assets/css/admin.css"
-	rel="stylesheet" type="text/css">
-<script type="text/javascript"
-	src="${pageContext.servletContext.contextPath }/assets/js/jquery/jquery-1.9.0.js"></script>
+	<title>T&F</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu" rel="stylesheet">
+	<link href="${pageContext.servletContext.contextPath }/assets/css/common.css" rel="stylesheet" type="text/css">
+	<link href="${pageContext.servletContext.contextPath }/assets/css/user.css" rel="stylesheet" type="text/css">
+	<link href="${pageContext.servletContext.contextPath }/assets/css/admin.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/jquery/jquery-1.9.0.js"></script>
 </head>
 <body>
 	<div id="wrap">
 
 		<!-- Header -->
-		<c:import url="/WEB-INF/views/user/include/header.jsp" />
+		<c:import url="/WEB-INF/views/include/header.jsp" />
 
 		<!-- Contents -->
 		<section>
@@ -37,7 +28,7 @@
 				<section id="contents">
 					
 					<!-- left_nav -->
-					<c:import url="/WEB-INF/views/user/include/left_nav.jsp" />
+					<c:import url="/WEB-INF/views/include/left_nav.jsp" />
 
 					<article class="admin_content">
 
@@ -74,7 +65,7 @@
 		</section>
 
 		<!-- Footer -->
-		<c:import url="/WEB-INF/views/user/include/footer.jsp" />
+		<c:import url="/WEB-INF/views/include/footer.jsp" />
 
 	</div>
 </body>

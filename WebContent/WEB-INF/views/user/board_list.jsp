@@ -19,7 +19,7 @@
 		<div id="wrap">
 		
 			<!-- Header -->
-			<c:import url="/WEB-INF/views/user/include/header.jsp" />
+			<c:import url="/WEB-INF/views/include/header.jsp" />
 			
 			<!-- Contents -->
 			<section>
@@ -58,10 +58,10 @@
 			</section>
 			
 			<!-- The product shortcut button ( item 4 ) -->
-			<c:import url="/WEB-INF/views/user/include/quick_item.jsp" />
+			<c:import url="/WEB-INF/views/include/quick_item.jsp" />
 			
 			<!-- Footer -->
-			<c:import url="/WEB-INF/views/user/include/footer.jsp" />
+			<c:import url="/WEB-INF/views/include/footer.jsp" />
 			
 		</div>
 	</body>

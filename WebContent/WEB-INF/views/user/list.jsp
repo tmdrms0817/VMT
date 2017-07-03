@@ -12,34 +12,32 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu" rel="stylesheet">
 		<link href="${pageContext.servletContext.contextPath }/assets/css/common.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.servletContext.contextPath }/assets/css/user.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/jquery/jquery-1.9.0.js"></script>    
-		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/window.js"></script>
-		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/fixed.js"></script>			
+		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/jquery/jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="${pageContext.servletContext.contextPath }/assets/js/lib/fixed.js"></script>	    
 	</head>
 	<body>
 		<div id="wrap">
 		
 			<!-- Header -->
-			<c:import url="/WEB-INF/views/user/include/header.jsp" />
+			<c:import url="/WEB-INF/views/include/header.jsp" />
 			
 			<!-- Contents -->
 			<section>
-				
 				<!-- Main Contents -->
 				<article id ="main">
 					<section id ="contents">
-					
-						
+						<!-- NEW UPDATE ITEM (row - 2 , col - 4) -->
+						<c:import url="/WEB-INF/views/include/product_list.jsp" />
 					</section>
 				</article>
 				
 			</section>
 			
 			<!-- The product shortcut button ( item 4 ) -->
-			<c:import url="/WEB-INF/views/user/include/quick_item.jsp" />
+			<c:import url="/WEB-INF/views/include/quick_item.jsp" />
 			
 			<!-- Footer -->
-			<c:import url="/WEB-INF/views/user/include/footer.jsp" />
+			<c:import url="/WEB-INF/views/include/footer.jsp" />
 			
 		</div>
 	</body>

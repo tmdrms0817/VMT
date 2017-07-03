@@ -9,11 +9,11 @@ public class AdminController {
 	
 	@RequestMapping( { "", "/" } )
 	public String index(){
-		return "user/admin/admin";
+		return "admin/admin";
 	}
 	
 	@RequestMapping("/product")
 	public String ProductRegistration(){
-		return "user/admin/product";
+		return "admin/product";
 	}
 }
