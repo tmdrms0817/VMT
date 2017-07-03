@@ -33,23 +33,23 @@
 	<!-- Site Navigation Bar -->
 	<nav class="menu">
 	<ul id ="item_menu">
-		<li><a href="#">BEST OF BEST</a></li>
-		<li><a href="#">NEW ITEM</a></li>
-		<li><a href="#">OUTER</a></li>
-		<li><a href="#">SUIT</a></li>
-		<li><a href="#">TOP</a></li>
-		<li><a href="#">SHIRT</a></li>
-		<li><a href="#">BOTTOM</a></li>
-		<li><a href="#">SHOES&amp;BAG</a></li>
-		<li><a href="#">ACC</a></li>
-		<li><a href="#">SALE</a></li>
-		<li><a href="#">ONLY YOU</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/list">BEST OF BEST</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/list">NEW ITEM</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/list">OUTER</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/list">SUIT</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/list">TOP</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/list">SHIRT</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/list">BOTTOM</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/list">SHOES&amp;BAG</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/list">ACC</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/list">SALE</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/list">ONLY YOU</a></li>
 	</ul>
 	<ul id ="bord_menu">
-		<li><a href="#">NOTICE</a></li>
-		<li><a href="#">Q&A</a></li>
-		<li><a href="#">REVIEW</a></li>
-		<li><a href="#">LEVEL UP</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/board">NOTICE</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/board">Q&A</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/board">REVIEW</a></li>
+		<li><a href="${pageContext.servletContext.contextPath }/board">LEVEL UP</a></li>
 	</ul> 
 	</nav>
 </header>
